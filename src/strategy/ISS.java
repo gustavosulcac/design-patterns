@@ -1,7 +1,8 @@
 package strategy;
 
-public class ISS {
-	public double calculaISS(Presupuesto presupuesto) {
+public class ISS implements Impuesto {
+	@Override
+	public double calcula(Presupuesto presupuesto) {
 		return presupuesto.getValor() * 0.06;
 	}
 }

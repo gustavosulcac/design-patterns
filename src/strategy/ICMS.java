@@ -1,7 +1,8 @@
 package strategy;
 
-public class ICMS {
-	public double calculaICMS(Presupuesto presupuesto) {
+public class ICMS implements Impuesto {
+	@Override
+	public double calcula(Presupuesto presupuesto) {
 		return presupuesto.getValor() * 0.1;
 	}
 }
